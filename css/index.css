@@ -6,7 +6,7 @@ body {
     
 }
 header {
-    background: url('/img/the-macallan.jpg') no-repeat;
+    background: url('img/the-macallan.jpg') no-repeat;
     background-size: cover;
     height: 100vh;   
 }
