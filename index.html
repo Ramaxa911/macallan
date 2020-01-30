@@ -8,57 +8,52 @@
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-        <Section>
-            <p class="home-bg">
-                <img src="img/the-macallan.jpg" alt="the macallan image">
-            </p>
-            <header>
-                <div class="main-logo">
-                    <a href="index.html"><h1>The Macallan</h1></a>
+        <header>
+            <div class="main-logo">
+                <a href="index.html"><h1>The Macallan</h1></a>
+            </div>
+            <nav>
+                <div class="main-nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">Inside the Macallan</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Whisky</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Distillery</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Make the Goal</a>
+                        </li>
+                    </ul>
                 </div>
-                <nav>
-                    <div class="main-nav">
-                        <ul>
-                            <li>
-                                <a href="index.html">Inside the Macallan</a>
-                            </li>
-                            <li>
-                                <a href="index.html">Whisky</a>
-                            </li>
-                            <li>
-                                <a href="index.html">Distillery</a>
-                            </li>
-                            <li>
-                                <a href="index.html">Shop</a>
-                            </li>
-                            <li>
-                                <a href="index.html">Make the Goal</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="account-cart-phone">
-                        <ul>
-                            <li>
-                                <a href="index.html">account</a>
-                            </li>
-                            <li>
-                                <a href="index.html">cart</a>
-                            </li>
-                            <li>
-                                <a href="index.html">phone</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-            <article class="largest_selling">
+                <div class="account-cart-phone">
+                    <ul>
+                        <li>
+                            <a href="index.html" ><img src="img/social-logo/icon_user.png" alt="Account"></a>
+                        </li>
+                        <li>
+                            <a href="index.html" ><img src="img/social-logo/icon_shop.png" alt="cart"></a>
+                        </li>
+                        <li>
+                            <a href="index.html" ><img src="img/social-logo/icon_smart.png" alt="phone"></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <article  class="largest_selling">
                 <h2>  largest selling single malt whisky in the world </h2>
                 <p>
                 As the Macallan’s reputation grew, its sales continued to increase throughout the 20th Century and major expansion took place between 1951 and 1963.
                 In 1999, a majority shareholding was bought by The Edrington Group.
                 </p>
             </article>
-        </section>
+        </header>
         <article class="explore">
             <h2>  Explore The Range </h2>
             <p>
@@ -67,11 +62,11 @@
         </article>
         <section class="Carousel">
             <div>
-                
+                <!-- тут має бути карусель, поки що не знаю як зробити -->
             </div>
         </section>
-        <section class="news">
-            <div>
+        <section class="news-and-trilogy">
+            <div class="mastery-team">
                 <img src="img/mastery-team.jpg" alt="team">
                 <h2> News</h2>
                 <p>
@@ -86,7 +81,7 @@
             </div>
         </section>
         <section class="character">
-            <img src="img/distillery-tour-background.jpg" alt="botoom-background">
+            <img src="img/distillery-tour-background.jpg" alt="distillery-tour">
             <h2>CHARACTER THAT RUNS DEEP</h2>
             <p>
             The Six Pillars are the foundation stones of everything we do. From place to process, people and passion,
@@ -94,7 +89,9 @@
             </p>
         </section>
         <footer>
-            <img src="img/estate-logo.png" alt="logo of the Macallan">
+            <div class="estate-logo">
+                <img src="img/estate-logo.png" alt="logo of the Macallan">
+            </div>
             <div class="location_info">
                 <p> Location: <br>
                 201 W 5th Street Suite 1550
@@ -105,7 +102,7 @@
             </div>
             <div class="contact_form">
                 <form method="POST" action="https://formspree.io/mpzdzrgw">
-                    <p> Contact us
+                    <p> Contact us: <br>
                         <label>
                             Email:*
                             <input type="Email" placeholder="Email" name="Email" required name="Email">
@@ -115,13 +112,27 @@
                             <input type="text" name="Name" placeholder="Name" required name="Name">
                         </label>
                     </p>
-                    <p>Message:<Br>
-                        <textarea name="comment" cols="40" rows="3"></textarea>
+                    <p>Message:*<Br>
+                        <textarea name="comment" cols="40" rows="3" required></textarea>
                     </p>
-                    <button type="submit">Submit </button>
+                    <input type="submit">
                 </form>
             </div>
             <div class="social_icon">
+                <ul>
+                    <li>
+                        <a href="https://facebook.com" ><img src="img/social-logo/icon_facebook.png" alt="Facebook-icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" ><img src="img/social-logo/icon_instagram.png" alt="instagram-icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com" ><img src="img/social-logo/icon_youtube.png" alt="icon_youtube"></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com" ><img src="img/social-logo/iconfinder_twitter.png" alt="icon_twitter"></a>
+                    </li>                
+                </ul>                
             </div>
             <hr>
             <nav class=footer-nav>
