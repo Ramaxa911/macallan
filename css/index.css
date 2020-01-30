@@ -3,10 +3,95 @@
     margin: 0;
 }
 body {
-    
+  height: 100%;  
 }
 header {
     background: url('../img/the-macallan.jpg') no-repeat;
     background-size: cover;
-    height: 100vh;   
+    height: 100vh;
+    width: auto;
+}
+
+.top-header {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    background-color: white; 
+    opacity: 0.9;
+}
+#main-logo {
+    margin:auto;
+
+    
+	
+}
+#main-logo h1 {
+    margin:auto;
+    font-weight: lighter;
+
+    
+	
+}
+#main-logo a {
+    text-decoration: none;
+    font-weight: lighter;
+    color: coral;
+    font-style: italic;
+    
+}
+.main-nav {
+    margin:auto;
+    font-size: 24px;
+    font-weight: bold;
+    				 
+}
+	
+.main-nav li {
+    list-style: none;
+    float:center;
+    text-decoration: none;
+    display: inline;
+    margin: auto;
+    margin-left: 30px     
+}
+.main-nav a {
+    text-decoration: none;
+    margin: auto;
+    color: grey;
+}
+.main-nav a:hover {
+  color: coral;
+  text-decoration: underline; 
+ transition-delay: .05s; 
+}
+.side-nav  {
+    margin: auto;
+}
+.side-nav li {
+    list-style: none;
+    float:right;
+    text-decoration: none;
+    display: inline;
+    margin-left: 20px;
+}
+.news {
+    display:inline-block;
+    position:relative;
+
+}
+.news h2+p {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    width: 100%;
+
+}
+#estate-logo {
+    background-color: black;
+    display: inline-block;
+}
+.social-icon li {
+    display: inline;
+}
+.footer-nav li {
+    display: inline;
 }
