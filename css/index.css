@@ -10,28 +10,19 @@ header {
     background-size: cover;
     height: 100vh;
     width: auto;
-    
 }
 
 .top-header {
     display: grid;
     grid-template-columns: 20% 60% 20%;
     padding-top: 15px;
-    
-    
 }
 #main-logo {
     margin:auto;
-
-    
-	
-}
+    }
 #main-logo h1 {
     margin:auto;
     font-weight: lighter;
-
-    
-	
 }
 #main-logo a {
     text-decoration: none;
@@ -49,7 +40,6 @@ header {
 	
 .main-nav li {
     list-style: none;
-    float:center;
     text-decoration: none;
     display: inline;
     margin: auto;
@@ -81,35 +71,26 @@ header {
     margin-left: 35px;
 }
 .largest-selling {
-    
-    
-    color: white;
+     color: white;
     position: relative;
     padding-top: 450px;
     padding-left: 270px;
     display: block;
-    
 }
 .largest-selling h2 {
     color: coral;
     font-style: italic;
     font-size: 22px;
-
-   
-    
 }
 .news {
     display:inline-block;
     position:relative;
-    
-
-}
+    }
 .news p {
     position: absolute;
     top: 250px;
     left: 0;
     width: 100%;
-
 }
 #estate-logo {
     background-color: black;
