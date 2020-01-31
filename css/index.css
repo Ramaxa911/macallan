@@ -10,13 +10,15 @@ header {
     background-size: cover;
     height: 100vh;
     width: auto;
+    
 }
 
 .top-header {
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    background-color: white; 
-    opacity: 0.9;
+    padding-top: 15px;
+    
+    
 }
 #main-logo {
     margin:auto;
@@ -66,19 +68,43 @@ header {
 .side-nav  {
     margin: auto;
 }
+.side-nav img {
+    height: 42px;
+    width: 42px;
+    
+}
 .side-nav li {
     list-style: none;
     float:right;
     text-decoration: none;
     display: inline;
-    margin-left: 20px;
+    margin-left: 35px;
+}
+.largest-selling {
+    
+    
+    color: white;
+    position: relative;
+    padding-top: 450px;
+    padding-left: 270px;
+    display: block;
+    
+}
+.largest-selling h2 {
+    color: coral;
+    font-style: italic;
+    font-size: 22px;
+
+   
+    
 }
 .news {
     display:inline-block;
     position:relative;
+    
 
 }
-.news h2+p {
+.news p {
     position: absolute;
     top: 250px;
     left: 0;
@@ -91,6 +117,10 @@ header {
 }
 .social-icon li {
     display: inline;
+}
+.social-icon img {
+    height: 42px;
+    width: 42px;
 }
 .footer-nav li {
     display: inline;
