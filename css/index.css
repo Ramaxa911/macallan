@@ -1,4 +1,4 @@
-h1, h2, section, nav, header, aside, div, p, ul {
+h1, h2, section, nav, header, aside, div, p, ul, html {
     margin: 0;
     padding: 0;
 }
@@ -16,7 +16,10 @@ header {
     display: flex;
     padding-top: 15px;
     background-color: rgba(20, 20, 20, 0.6);
-    justify-content: space-around;
+    justify-content: space-around; 
+    z-index: 1;
+    
+    
 }
 
 header #main-logo a {
@@ -140,4 +143,129 @@ header .side-nav ul img{
         display: none;    
     }
     
+}
+#carousel {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.news-and-trilogy{
+    display: flex;
+    justify-content: center;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 3%;
+    
+
+}
+.news {
+    background-image: url("../img/mastery-team.jpg" );
+    background-size: cover;
+    background-position: center;
+    min-width: 80vh ;
+    min-height: 40vw;
+    margin-right: 1%;   
+}
+.news h2{
+    color: coral;
+    font-size: 2em;
+    font-style: italic;
+    text-transform: capitalize;
+    font-weight: lighter;
+    text-align: center;
+}
+.news p{
+    color: rgba(255, 255, 255, 0.63);
+    font-size: 1.5em;
+    padding-top: 30px;
+    text-align: center;
+}
+.macallan-trilogy {
+    background-image: url("../img/barrels.jpg" );
+    background-size: cover;
+    background-position: center;
+    min-width: 80vh ;
+    min-height: 40vw;
+    margin-left: 1%;
+    
+    
+}
+.macallan-trilogy{
+    color: coral;
+    font-size: 2em;
+    font-style: italic;
+    text-transform: capitalize;
+    font-weight: lighter;
+    text-align: center;
+}
+.macallan-trilogy p{
+    color: rgba(255, 255, 255, 0.63);
+    font-size: 1.5em;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.character {
+    background-image: url(../img/distillery-tour-background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vw;
+    margin-top: 4%;
+    
+}
+.character h2{
+    color: coral;
+    font-size: 2em;
+    font-style: italic;
+    text-transform: capitalize;
+    font-weight: lighter;
+    text-align: center;
+}
+.character p{
+    color: rgba(255, 255, 255, 0.63);
+    font-size: 1.5em;
+    padding-top: 30px;
+    text-align: center;
+}
+footer {
+    background-color: grey;
+    margin-top: 4%;
+}
+.estate-logo-and-location-and-conact-form{
+    display: grid;
+    grid-template-columns: 15% 40% 45%;
+}
+
+footer .social-icon {
+    display: flex;
+    justify-content: center;
+}
+footer .social-icon ul{
+    display: flex;
+    list-style-type: none;
+}
+footer .footer-nav {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    
+}
+footer .footer-nav ul{
+    display: flex;
+    list-style-type: none;
+    
+}    
+footer .footer-nav ul a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: black;
+    padding-left: 30px;
+    
+}
+footer .footer-nav ul a:hover{
+    color: white;
+    transition-delay: .02s;
+    text-decoration: underline;
+}
+footer #copyright p {
+    text-align: center;
 }

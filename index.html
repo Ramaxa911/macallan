@@ -5,11 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>The Macallan</title>
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
     <body>
         <header>
-            <div class="top-header">
+            <div class="top-header top-header-default navbar-fixed-top">
                 <div id="main-logo">
                     <h1><a href="index.html">The Macallan</a></h1>
                 </div>
@@ -61,7 +63,7 @@
                 </p>
             </section>
         </header>
-        <!-- <section class="explore">
+        <section class="explore">
             <h2>  Explore The Range </h2>
             <p>
                 Each and every Macallan single<br>
@@ -70,15 +72,55 @@
                 wood and spirit since 1824...
             </p>
             </section>
-        <section class="carousel">
-            <div>
-                <h2>carousel should be here</h2>
-                
+            <!-- Bootstrap 4   carousel -->
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="img-fluid" src="img/tp.jpeg" alt="...">
+                <div class="carousel-caption">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                 Aperiam eius possimus laudantium itaque, fuga illum sequi <br>
+                eveniet error culpa dolor aspernatur commodi at, veritatis <br>
+                reprehenderit sed maiores. Beatae, consectetur minima. <br>
+                </div>
             </div>
-        </section>
+            <div class="carousel-item">
+                <img class="img-fluid" src="img/04.jpg" alt="...">
+                <div class="carousel-caption">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                Aperiam eius possimus laudantium itaque, fuga illum sequi <br>
+                eveniet error culpa dolor aspernatur commodi at, veritatis <br>
+                reprehenderit sed maiores. Beatae, consectetur minima. <br>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid" src="img/25Y.png" alt="...">
+                <div class="carousel-caption">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                Aperiam eius possimus laudantium itaque, fuga illum sequi <br>
+                eveniet error culpa dolor aspernatur commodi at, veritatis <br>
+                reprehenderit sed maiores. Beatae, consectetur minima. <br>
+                </div>
+            </div>
+            </div>
+            <!-- Control item -->
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Back</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </div>
         <section class="news-and-trilogy">
             <div class="news">
-                <img src="img/mastery-team.jpg" alt="team">
+                <!-- <img src="img/mastery-team.jpg" alt="team"> -->
                 <h2> News</h2>
                 <p>
                     THE JOURNEY TO MASTERY:<br>
@@ -87,7 +129,7 @@
                 </p>
             </div>
             <div class="macallan-trilogy">
-                <img src="img/barrels.jpg" alt="barrels">
+                <!-- <img src="img/barrels.jpg" alt="barrels"> -->
                 <h2>The Macallan Trilogy</h2>
                 <p>
                     A full spectrum of Macallan single malts<br>
@@ -98,7 +140,7 @@
             </div>
         </section>
         <section class="character">
-            <img src="img/distillery-tour-background.jpg" alt="distillery-tour">
+            <!-- <img src="img/distillery-tour-background.jpg" alt="distillery-tour"> -->
             <h2>Character that runs depp</h2>
             <p> 
                 The Six Pillars are the foundation stones of<br>
@@ -108,40 +150,43 @@
             </p>
         </section>
         <footer>
-            <div id="estate-logo">
-                <img src="img/estate-logo.png" alt="logo of the Macallan">
-            </div>
-            <div class="location-info">
-                <p>
-                    Location: 
-                <br>
-                    201 W 5th Street Suite 1550
-                    Austin, TX 78701
-                    <a href="tel:">+1-512-516-8880</a>
-                </p>
-            </div>
-            <div class="contact-form">
-                <form method="POST" action="https://formspree.io/mpzdzrgw">
-                    <p> Contact us: <br>
-                        <label>
-                            Email:*
-                            <input type="email" placeholder="Email"  required name="Email">
-                        </label>
-                        <label>
-                            Name:*
-                            <input type="text"  placeholder="Name" required name="Name">
-                        </label>
+            <div class="estate-logo-and-location-and-conact-form">
+                <div id="estate-logo">
+                    <img src="img/estate-logo.png" alt="logo of the Macallan">
+                </div>
+                <div class="location-info">
+                    <p>
+                        Location: 
+                    <br>
+                        201 W 5th Street Suite 1550<br>
+                        Austin, TX 78701<br>
+                        <a href="tel:">+1-512-516-8880</a>
                     </p>
-                    <p>Message:*<Br>
-                        <textarea name="comment" cols="40" rows="3"  required></textarea>
-                    </p>
-                    <input type="submit">
-                </form>
+                </div>
+                <div class="contact-form">
+                    <form method="POST" action="https://formspree.io/mpzdzrgw">
+                        <p> Contact us: <br>
+                            <label>
+                                Email:*
+                                <input type="email" placeholder="Email"  required name="Email">
+                            </label>
+                            <label>
+                                Name:*
+                                <input type="text"  placeholder="Name" required name="Name">
+                            </label>
+                        </p>
+                        <p>Message:*<Br>
+                            <textarea name="comment" cols="40" rows="3"  required></textarea>
+                        </p>
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
             </div>
             <div class="social-icon">
                 <ul>
                     <li>
-                        <a href="https://facebook.com" ><img src="img/social-logo/icon-facebook.png" alt="Facebook-icon" width="42" height="42"></a>
+                        <a href="https://facebook.com" ><img src="img/social-logo/icon-facebook.png" alt="Facebook-icon"></a>
                     </li>
                     <li>
                         <a href="https://instagram.com" ><img src="img/social-logo/icon-instagram.png" alt="instagram-icon"></a>
@@ -158,7 +203,7 @@
             <nav class=footer-nav>
                 <ul>
                     <li>
-                        <a href="index.html">AИOUT US</a>
+                        <a href="index.html">ABOUT US</a>
                     </li>
                     <li>
                         <a href="index.html">DRINK RESPONSIBLY</a>
@@ -175,5 +220,8 @@
                 <p>© 2019 The Macallan Distillers Limited, The Macallan</p>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
-</html> -->
+</html>
