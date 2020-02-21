@@ -355,7 +355,6 @@ header .largest-selling p {
 
 .carousel-caption {
     color: rgb(214, 211, 211);
-    background-color:122,122,122,0.5 ;
 }
 @media screen and (min-width: 1px) and (max-width: 480px) { 
     .carousel-caption {
@@ -687,7 +686,6 @@ footer .footer-nav ul li a:hover {
     }
     footer .footer-nav ul li a{
         padding: 0;
-        text-emphasis: center;
     }
 }
 footer #copyright p {
