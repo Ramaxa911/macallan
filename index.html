@@ -13,8 +13,34 @@
     <body>
         <header>
             <div class="top-header">
+                    <div id="menuToggle">
+                      <input type="checkbox" />
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <ul id="menu">
+                        <li>
+                            <a href="index.html">The Macallan</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Inside the Macallan</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Whisky</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Distillery</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Location</a>
+                        </li>
+                      </ul>
+                    </div>
                 <div id="main-logo">
-                    <h1><a href="index.html">The Macallan</a></h1>
+                    <h1><a href="index.html"><span>The</span><span> Macallan</span></a></h1>
                 </div>
                 <nav class="main-nav">
                     <ul>
@@ -36,13 +62,13 @@
                     <nav class="side-nav">
                         <ul>
                             <li>
-                                <a href="index.html" ><img src="img/social-logo/icon-location.png" alt="location"></a>
+                                <a href="index.html" ><img src="img/social-logo/icon-location.png" alt="location item"></a>
                             </li>
                             <li>
-                                <a href="index.html" ><img src="img/social-logo/icon-shop.png" alt="user"></a>
+                                <a href="index.html" ><img src="img/social-logo/icon-shop.png" alt="cart item"></a>
                             </li>
                             <li>
-                                <a href="index.html" ><img src="img/social-logo/icon-user.png" alt="account"></a>
+                                <a href="index.html" ><img src="img/social-logo/icon-user.png" alt="user account item"></a>
                             </li>
                         </ul>
                     </nav>
@@ -65,7 +91,7 @@
             </section>
         </header>
         <section class="explore">
-            <h2>  Explore The Range </h2>
+            <h2>  ~ Explore The Range ~ </h2>
             <p>
                 Each and every Macallan single<br>
                 malt whisky reveals our unrivalled<br>
@@ -73,7 +99,6 @@
                 wood and spirit since 1824...
             </p>
             </section>
-            <!-- Bootstrap 4   carousel -->
         <div id="carousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -82,34 +107,27 @@
             </ol>
             <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="img-fluid" src="img/tp.jpeg" alt="...">
+                <img class="img-fluid" src="img/tp.jpeg" alt="beautiful view to mountains and old mansion of the Macallan family">
                 <div class="carousel-caption">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
                  Aperiam eius possimus laudantium itaque, fuga illum sequi <br>
-                eveniet error culpa dolor aspernatur commodi at, veritatis <br>
-                reprehenderit sed maiores. Beatae, consectetur minima. <br>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="img-fluid" src="img/041.jpg" alt="...">
+                <img class="img-fluid" src="img/macallan-home.jpg" alt="The Macallan factory">
                 <div class="carousel-caption">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
                 Aperiam eius possimus laudantium itaque, fuga illum sequi <br>
-                eveniet error culpa dolor aspernatur commodi at, veritatis <br>
-                reprehenderit sed maiores. Beatae, consectetur minima. <br>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="img-fluid" src="img/25Y1.jpg" alt="...">
+                <img class="img-fluid" src="img/premium25.jpg" alt="Bottle of Maccalan whiskey 25years old">
                 <div class="carousel-caption">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
                 Aperiam eius possimus laudantium itaque, fuga illum sequi <br>
-                eveniet error culpa dolor aspernatur commodi at, veritatis <br>
-                reprehenderit sed maiores. Beatae, consectetur minima. <br>
                 </div>
             </div>
             </div>
-            <!-- Control item -->
             <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Back</span>
@@ -129,7 +147,6 @@
                 </p>
             </div>
             <div class="macallan-trilogy">
-                <!-- <img src="img/barrels.jpg" alt="barrels"> -->
                 <h2>The Macallan Trilogy</h2>
                 <p>
                     A full spectrum of Macallan single malts<br>
@@ -151,12 +168,12 @@
         <footer>
             <div class="estate-logo-and-location-and-conact-form">
                 <div id="estate-logo">
-                    <img src="img/estate-logo.png" alt="logo of the Macallan">
+                    <img src="img/estate-logo.png" alt="Old family home of the  Macallan">
                 </div>
                 <div class="location-info">
                     <p>
-                        Location: 
-                    <br>
+                        <span>Location: </span> 
+                    <br><br>
                         201 W 5th Street Suite 1550<br>
                         Austin, TX 78701<br>
                         <a href="tel:">+1-512-516-8880</a>
@@ -164,18 +181,16 @@
                 </div>
                 <div class="contact-form">
                     <form method="POST" action="https://formspree.io/mpzdzrgw">
-                        <p> Contact us: <br>
+                        <p> <span>Contact us:</span> <br>
                             <label>
-                                Email:*
-                                <input type="email" placeholder="Email"  required name="Email">
-                            </label>
+                                <input type="email" placeholder="Email*"  required name="Email">
+                            </label><br>
                             <label>
-                                Name:*
-                                <input type="text"  placeholder="Name" required name="Name">
+                                <input  type="text"  placeholder="Name*" required name="Name">
                             </label>
                         </p>
-                        <p>Message:*<Br>
-                            <textarea name="comment" cols="40" rows="3"  required></textarea>
+                        <p id="coments">
+                            <textarea name="comment" placeholder="Message*" cols="42" rows="3"  required></textarea>
                         </p>
                         <input type="submit">
                     </form>
@@ -184,20 +199,20 @@
             <div class="social-icon">
                 <ul>
                     <li>
-                        <a href="https://facebook.com" ><img src="img/social-logo/icon-facebook.png" alt="Facebook-icon"></a>
+                        <a href="https://facebook.com"><img src="img/social-logo/icon-facebook.png" alt="Facebook icon"></a>
                     </li>
                     <li>
-                        <a href="https://instagram.com" ><img src="img/social-logo/icon-instagram.png" alt="instagram-icon"></a>
+                        <a href="https://instagram.com"><img src="img/social-logo/icon-instagram.png" alt="Instagram icon"></a>
                     </li>
                     <li>
-                        <a href="https://youtube.com" ><img src="img/social-logo/icon-youtube.png" alt="icon-youtube"></a>
+                        <a href="https://youtube.com"><img src="img/social-logo/icon-youtube.png" alt="Youtube icon"></a>
                     </li>
                     <li>
-                        <a href="https://twitter.com" ><img src="img/social-logo/icon-twitter.png" alt="icon-twitter"></a>
+                        <a href="https://twitter.com"><img src="img/social-logo/icon-twitter.png" alt="Twitter icon"></a>
                     </li>                
                 </ul>                
             </div>
-            <hr id="hr">
+            <hr>
             <nav class=footer-nav>
                 <ul>
                     <li>
@@ -215,7 +230,7 @@
                 </ul>
             </nav>
             <div id="copyright">
-                <p>© 2019 The Macallan Distillers Limited, The Macallan</p>
+                <p>© 2020 SoftServe It Acadamy &#128077;, Partyka R.</p>
             </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
